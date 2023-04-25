@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	
+
+
+		<title>Inicio - Publicoches.es</title>
+		<!-- FontAwesome -->
+		<script src="https://kit.fontawesome.com/00cba52a3a.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- CSS Styles -->
+        <link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/prealoder.css">
+
+		
+
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+
+
+	<title>Inicio</title>
+</head>
+<body>
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="loader">
+		  <div class="car">
+			<div class="car__body"></div>
+			<svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
+				<g transform="translate(2 1)" stroke="#002742" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+					<path class="car__body" d="M47.293 2.375C52.927.792 54.017.805 54.017.805c2.613-.445 6.838-.337 9.42.237l8.381 1.863c2.59.576 6.164 2.606 7.98 4.531l6.348 6.732 6.245 1.877c3.098.508 5.609 3.431 5.609 6.507v4.206c0 .29-2.536 4.189-5.687 4.189H36.808c-2.655 0-4.34-2.1-3.688-4.67 0 0 3.71-19.944 14.173-23.902zM36.5 15.5h54.01" stroke-width="3"/>
+					<ellipse class="car__wheel--left" stroke-width="3.2" fill="#FFF" cx="83.493" cy="30.25" rx="6.922" ry="6.808"/>
+					<ellipse class="car__wheel--right" stroke-width="3.2" fill="#FFF" cx="46.511" cy="30.25" rx="6.922" ry="6.808"/>
+					<path class="car__line car__line--top" d="M22.5 16.5H2.475" stroke-width="3"/>
+					<path class="car__line car__line--middle" d="M20.5 23.5H.4755" stroke-width="3"/>
+					<path class="car__line car__line--bottom" d="M25.5 9.5h-19" stroke-width="3"/>
+				</g>
+			</svg>
+		  </div>
+		</div>
+	  </div>
+
+	
+	  <!-- Header -->
+	
+
+
+	
+	<header class="header">
+        <div class="logo">
+        <a href="index.html"><img src="images/logo publicoches.png" alt=""></a>
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a class="btn" href="#">Servicios</a></li>
+                <li><a class="btn" href="nosotros.html">Nosotros</a></li>
+           </ul>            
+        </nav>
+        <a class="btn" href="#"><button>Contacto</button></a>
+
+		
+		
+		<a href="users.php" title="Cuenta"><i class="fa-solid fa-user"></i></a>
+
+		<a class="btn" href="#"><button><i class="fa-solid fa-plus"></i>Vende tu coche</button></a>
+
+		<a class="btn" href="screen-chat.php" title="Chatea con los demas usuarios!"><i class="fa-solid fa-comment"></i></a>
+		
+		
+
+
+<!---->        <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
+
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" href="" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a href="#">Servicios</a>
+<!---->                <a href="nosotros.html">Nosotros</a>
+<!---->                <a href="#">Contacto</a>
+							<a href="users.php">Cuenta</a>
+
+							<a class="btn" href="#"><button><i class="fa-solid fa-plus"></i>Vende tu coche</button></a>
+<!---->            </div>
+<!---->        </div>
+
+
+    </header>
+
+	<script type="text/javascript" src="js/nav.js"></script>
+
+
+
+
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Busca el modelo de tu auto aquí..."/>
+
+		
+		
+        <button id="search"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+		
+      </div>
+	  <div class="container">
+		<div id="buttons">
+			<button class="button-value" onclick="filterProduct('all')">Todo</button>
+
+			<button class="button-value" onclick="filterProduct('Peugeot')">
+			<img class="iconos-marcas" src="images/peugeot logo.png" alt=""> PEUGEOT
+			</button>
+
+			<button class="button-value" onclick="filterProduct('Volkswagen')">
+			<img class="iconos-marcas" src="images/volkswagen logo.svg" alt=""> VOLKSWAGEN
+			</button>
+
+			<button class="button-value" onclick="filterProduct('Toyota')">
+			<img class="iconos-marcas" src="images/toyota logo.svg" alt=""> TOYOTA
+			</button>
+
+			<button class="button-value" onclick="filterProduct('Ford')">
+			<img class="iconos-marcas" src="images/ford logo.svg" alt="">FORD
+			</button>
+
+			<button class="button-value" onclick="filterProduct('Renault')">
+			<img class="iconos-marcas" src="images/renault logo.svg" alt="">RENAULT
+			</button>
+
+			<button class="button-value" onclick="filterProduct('Chevrolet')">
+			<img class="iconos-marcas" src="images/chevrolet logo.svg" alt="">CHEVROLET
+			</button>
+
+			<button class="button-value" onclick="filterProduct('Fiat')">
+			<img class="iconos-marcas" src="images/fiat logo.svg" alt="">FIAT
+			</button>
+
+			<button class="button-value" onclick="filterProduct('Audi')">
+			<img class="iconos-marcas" src="images/audi logo.svg" alt="">AUDI
+			</button>
+
+			
+
+		</div>
+	</div>
+    
+    <div id="products"></div>
+    </div>
+
+	<br><br><br>
+
+
+	<button id="back-to-top-button"><i class="fa-solid fa-arrow-up"></i></button>
+	
+
+
+	<!--FOOTER-->
+
+	<footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="images/logo publicoches.png" alt="">
+						
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Enlaces rápidos</h2>
+                <ul>
+					<li class="fast-links"><a href="#">Inicio</a></li>
+					<li class="fast-links"><a href="#">Servicios</a></li>
+					<li class="fast-links"><a href="#">Nosotros</a></li>
+					<li class="fast-links"><a href="#">Contacto</a></li>
+                    <li class="fast-links"><a href="#">Vende tu coche</a></li>
+				</ul>
+            </div>
+            <div class="box">
+                <h2>Redes sociales</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Publicoches.es</b> - Todos los Derechos Reservados.</small><br>
+			<small>Diseñado y desarrollado por</small><a class="ams-title" href="https://www.amssystems.com.ar" target="_blank"><b> AMS Systems</b></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+ 
+
+</body>
+
+<script src="js/prealoder.js"></script>
+
+<!-- Resourses Preloader -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
+
+</html>
+
+
+	
